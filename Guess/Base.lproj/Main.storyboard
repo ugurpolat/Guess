@@ -1,24 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bg7-9C-2Ug">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="A" id="BYZ-38-t0r" customClass="ViewController" customModule="Guess" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6k-Ta-2T7">
+                                <rect key="frame" x="61.666666666666657" y="446" width="270" height="44"/>
+                                <color key="backgroundColor" red="0.72549019609999998" green="0.97254901959999995" blue="0.20357674319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="2GQ-2F-DnB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start Game">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="iKO-nq-AXL" kind="show" id="HD9-ub-UI2"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JMg-1S-qpm">
+                                <rect key="frame" x="91.666666666666686" y="148.33333333333331" width="210" height="169.33333333333334"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="SSj-1A-4K9"/>
+                                    <constraint firstAttribute="width" constant="210" id="hYl-m8-jNF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lh4-xP-q6c">
+                                <rect key="frame" x="83.666666666666686" y="338" width="226" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lh4-xP-q6c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0gd-6W-4I1"/>
+                            <constraint firstItem="B6k-Ta-2T7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C7I-DP-non"/>
+                            <constraint firstItem="JMg-1S-qpm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vet-OX-K5Q"/>
+                            <constraint firstItem="JMg-1S-qpm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="YXr-ua-NBp"/>
+                            <constraint firstItem="Lh4-xP-q6c" firstAttribute="top" secondItem="JMg-1S-qpm" secondAttribute="bottom" constant="20" id="c6K-K0-hNG"/>
+                            <constraint firstItem="B6k-Ta-2T7" firstAttribute="top" secondItem="Lh4-xP-q6c" secondAttribute="bottom" constant="60" id="ylH-ve-72K"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Home" id="oGc-jm-51e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1956.4885496183206" y="3.5211267605633805"/>
+        </scene>
+        <!--Game Screen-->
+        <scene sceneID="B8e-SJ-caC">
+            <objects>
+                <viewController storyboardIdentifier="pageGame" id="iKO-nq-AXL" customClass="GameViewController" customModule="Guess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N3T-7v-7kl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your guess..." textAlignment="center" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="9fC-VV-Sbc">
+                                <rect key="frame" x="106.66666666666667" y="295" width="179.66666666666663" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="179.66999999999999" id="Qzd-Gm-GMk"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Tda-AJ-EIV"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="cleanPlaceHolder:" destination="iKO-nq-AXL" eventType="touchDown" id="pCq-Up-xnR"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Rx-7L-m9u">
+                                <rect key="frame" x="160.66666666666666" y="495" width="72" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Guess"/>
+                                <connections>
+                                    <action selector="guessClicked:" destination="iKO-nq-AXL" eventType="touchUpInside" id="6jD-6T-cHa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 lives left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNG-5y-xcc">
+                                <rect key="frame" x="131.66666666666666" y="167" width="129.99999999999997" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uaw-T0-3pg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DNG-5y-xcc" firstAttribute="top" secondItem="uaw-T0-3pg" secondAttribute="top" constant="64" id="0Bi-U4-VlD"/>
+                            <constraint firstItem="8Rx-7L-m9u" firstAttribute="centerX" secondItem="N3T-7v-7kl" secondAttribute="centerX" id="0tY-oo-0jY"/>
+                            <constraint firstItem="8Rx-7L-m9u" firstAttribute="top" secondItem="9fC-VV-Sbc" secondAttribute="bottom" constant="100" id="CC5-XN-90u"/>
+                            <constraint firstItem="DNG-5y-xcc" firstAttribute="centerX" secondItem="N3T-7v-7kl" secondAttribute="centerX" id="ZIY-Ys-S9a"/>
+                            <constraint firstItem="9fC-VV-Sbc" firstAttribute="centerX" secondItem="N3T-7v-7kl" secondAttribute="centerX" id="vIR-YM-f8R"/>
+                            <constraint firstItem="9fC-VV-Sbc" firstAttribute="top" secondItem="DNG-5y-xcc" secondAttribute="bottom" constant="92" id="va1-vX-V1f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Game Screen" id="wne-Ch-1Hx"/>
+                    <connections>
+                        <outlet property="guessLabel" destination="DNG-5y-xcc" id="KM2-2E-QDF"/>
+                        <outlet property="guessTextField" destination="9fC-VV-Sbc" id="dCY-D3-Ppi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zet-qt-USl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2823.6641221374043" y="3.5211267605633805"/>
+        </scene>
+        <!--Target View Controller-->
+        <scene sceneID="rnS-lM-Qim">
+            <objects>
+                <viewController storyboardIdentifier="target" id="KCA-o7-a6D" customClass="TargetViewController" customModule="Guess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GAN-l5-e7C">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAn-84-TeL">
+                                <rect key="frame" x="149.66666666666666" y="402" width="94" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kSG-AW-NJA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BAn-84-TeL" firstAttribute="centerY" secondItem="GAN-l5-e7C" secondAttribute="centerY" id="0SR-BM-9bP"/>
+                            <constraint firstItem="BAn-84-TeL" firstAttribute="centerX" secondItem="GAN-l5-e7C" secondAttribute="centerX" id="wpy-ma-2LB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="etiket" destination="BAn-84-TeL" id="nNm-AO-OQ9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DCc-h0-ju2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3657" y="18"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p5f-go-ykZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bg7-9C-2Ug" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K8O-DS-HRU">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SGw-9b-6Jg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8JY-DJ-HiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029.7709923664122" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dice.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

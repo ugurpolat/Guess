@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A2F930D9-EDE8-46D7-85AC-F1E539EE34A3"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "40F522CC-874D-4760-BBBF-9AE06C1BF359"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Guess/ResultViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ResultViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "40F522CC-874D-4760-BBBF-9AE06C1BF359 - f8f31fab28db93a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Guess.ResultViewController.messageText.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Guess"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ugurpolat/Github%20Repo/Guess/Guess/ResultViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "40F522CC-874D-4760-BBBF-9AE06C1BF359 - 8836c788df83bd36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Guess.ResultViewController.messageText.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Guess"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ugurpolat/Github%20Repo/Guess/Guess/ResultViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "40F522CC-874D-4760-BBBF-9AE06C1BF359 - 1784d11750170825"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Guess.ResultViewController.messageText.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Guess"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ugurpolat/Github%20Repo/Guess/Guess/ResultViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "40F522CC-874D-4760-BBBF-9AE06C1BF359 - b78c662c58a674e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Guess.ResultViewController.messageText.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Guess"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ugurpolat/Github%20Repo/Guess/Guess/ResultViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "40F522CC-874D-4760-BBBF-9AE06C1BF359 - 44f5c3ec187b558b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Guess.ResultViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Guess.ResultViewController"
+                  moduleName = "Guess"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ugurpolat/Github%20Repo/Guess/Guess/ResultViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "40F522CC-874D-4760-BBBF-9AE06C1BF359 - e7ea30e71ac66cfa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Guess.ResultViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Guess.ResultViewController&gt;"
+                  moduleName = "Guess"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ugurpolat/Github%20Repo/Guess/Guess/ResultViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
