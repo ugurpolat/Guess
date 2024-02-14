@@ -54,7 +54,7 @@ class GameViewController: UIViewController {
         
         let sendMessage:String = result
         targetViewController.msg = sendMessage
-        self.navigationController?.pushViewController(targetViewController, animated: true)
+        self.present(targetViewController, animated: true)
     }
     
     func warnPlaceHolder(){
